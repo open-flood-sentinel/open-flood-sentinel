@@ -1,0 +1,30 @@
+name: Bug report
+description: Something isn't working as expected
+labels: ["bug", "triage"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [Node firmware, Station firmware, Base station, Hardware, Simulation, Docs]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+  - type: input
+    id: env
+    attributes:
+      label: Board / version / OS
+  - type: dropdown
+    id: safety
+    attributes:
+      label: Could this cause a missed or false alarm?
+      options: ["No", "Possibly", "Yes"]

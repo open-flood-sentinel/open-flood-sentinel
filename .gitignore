@@ -1,0 +1,20 @@
+# Build outputs
+build/
+.pio/
+*.o
+*.elf
+*.bin
+*.hex
+# Python
+__pycache__/
+*.pyc
+.venv/
+# KiCad backups
+*-backups/
+*.kicad_prl
+# Secrets — never commit node keys or credentials
+*.key
+secrets*
+.env
+# OS
+.DS_Store

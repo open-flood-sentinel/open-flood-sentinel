@@ -1,0 +1,22 @@
+name: Field report
+description: Share results from a test, deployment or real flood event
+labels: ["field-report"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Region / river (as specific as you're comfortable sharing)
+  - type: textarea
+    id: setup
+    attributes:
+      label: Setup (nodes, stations, hardware versions, distances)
+  - type: textarea
+    id: result
+    attributes:
+      label: What happened? (detections, misses, false alarms, range, battery life)
+    validations:
+      required: true
+  - type: textarea
+    id: lessons
+    attributes:
+      label: Lessons learned / suggestions
